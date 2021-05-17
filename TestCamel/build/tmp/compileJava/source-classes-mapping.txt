@@ -1,0 +1,16 @@
+com/example/ProductRepository.java
+ com.example.ProductRepository
+com/example/ProductService.java
+ com.example.ProductService
+com/example/Discount.java
+ com.example.Discount
+com/example/Product.java
+ com.example.Product
+com/example/SpringBootCamelApplication.java
+ com.example.SpringBootCamelApplication
+ com.example.SpringBootCamelApplication$RestApi
+ com.example.SpringBootCamelApplication$TimedJobs
+com/example/DiscountRepository.java
+ com.example.DiscountRepository
+com/example/DiscountService.java
+ com.example.DiscountService

@@ -1,0 +1,18 @@
+1. Terminologies
+
+- dunzo app analogy
+
+- Components - units supported by came(80 at present exa - XML, JSP, HTTP,FTP etc) 
+- Producer
+- consumer
+- Message - actual entity of data which we are integrating
+- Exchange - encapsulate message and determines type
+- Endpoint - URI or address ftp://path
+- Processor - exchanging messages (delivery guy)
+- DSL - Java DSL
+- Camel Context - global object provides access to all services routing, endpoint etc.
+- Routes - functions chained together for processing
+
+- REST - 
+- Swagger - Open API design and document
+- Gradle - 

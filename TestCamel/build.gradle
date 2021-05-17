@@ -1,0 +1,59 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'org.springframework.boot' version '2.4.4'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+def camelVersion = "3.0.0-RC3"
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-core
+    implementation group: 'org.apache.camel', name: 'camel-core', version: '3.0.0-RC3'
+    //compile group: 'org.apache.camel', version: camelVersion, name: 'camel-core'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-cxf'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-ftp'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-jdbc'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-jms'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-stream'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-velocity'
+    compile group: 'org.apache.camel', version: camelVersion, name: 'camel-freemarker'
+
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web-services
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web-services', version: '2.4.5'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.5'
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-spring-boot-starter
+    implementation group: 'org.apache.camel', name: 'camel-spring-boot-starter', version: '3.0.0-RC3'
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-servlet-starter
+    implementation group: 'org.apache.camel', name: 'camel-servlet-starter', version: '3.0.0-RC3'
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-jackson-starter
+    implementation group: 'org.apache.camel', name: 'camel-jackson-starter', version: '3.0.0-RC3'
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-swagger-java-starter
+    implementation group: 'org.apache.camel', name: 'camel-swagger-java-starter', version: '3.0.0-RC3'
+    // https://mvnrepository.com/artifact/org.apache.camel/camel-jpa-starter
+    implementation group: 'org.apache.camel', name: 'camel-jpa-starter', version: '3.0.0-RC3'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jdbc
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.4.5'
+
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    compile group: 'com.h2database', name: 'h2', version: '1.4.200'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.4.5'
+    // https://mvnrepository.com/artifact/org.hsqldb/hsqldb
+    testImplementation group: 'org.hsqldb', name: 'hsqldb', version: '2.0.0'
+
+
+
+}
