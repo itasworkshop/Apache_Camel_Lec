@@ -1,0 +1,3 @@
+TestCamelHello.java
+ TestCamelHello
+ TestCamelHello$1

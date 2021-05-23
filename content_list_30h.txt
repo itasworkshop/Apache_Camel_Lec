@@ -1,0 +1,16 @@
+30 -hours
+1:30 hour everyday
+3 hour per day
+
+- Introduction and setup 50%
+- EIP - 25%
+- Groovy - 20%
+- Gradle - 5%
+
+formats -
+messaging kafka
+JMS
+JSON
+https, http
+
+
